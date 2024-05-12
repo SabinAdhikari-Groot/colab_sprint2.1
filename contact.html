@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Stays</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header class="tm-header">
+        <h1 class="logo"><img src="./images/logo.png" alt="Logo" width="100"></h1>
+        <nav class="tm-nav">
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tm-main">
+        <h2>Contact</h2>
+    </section>
+
+    <section class="tm-booking">
+        <form method="post" action="sendmail.php">
+            <div class="tm-form1">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Your message..." rows="4" required></textarea>
+                <input type="submit" id="sub2" value="Send">
+            </div>
+        </form>        
+
+        <div class="vertical-line"></div>
+
+        <div class="tm-form2">
+            <div class="tm-cl">
+                <p class="here">We are situated over here</p>
+                <img id="place" src="images/placeholder.png" alt="Map Placeholder">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="tm-footer">
+        <p>All rights reserved by group 3</p>
+    </footer>
+    
+</body>
+</html>

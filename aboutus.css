@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: skyblue; /* Set background color */
+}
+
+/* Header styles */
+/* Header styles */
+.tm-header {
+    background-color: teal;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px; /* Add border-radius for rounded corners */
+}
+
+
+.logo img {
+    width: 100px;
+}
+
+/* Navigation styles */
+.tm-nav {
+    text-align: center; /* Center align the nav links */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between nav links */
+}
+
+.nav-links li a {
+    color: black; /* Set text color */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main content styles */
+.tm-main {
+    flex: 1; /* Allow the main content to grow to fill available space */
+    background-color: skyblue;
+    padding: 20px;
+    color: black;
+}
+
+/* Footer styles */
+.tm-footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}

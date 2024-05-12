@@ -1,0 +1,117 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.tm-header {
+    background-color: teal;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Navigation styles */
+.tm-nav {
+    text-align: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sections */
+h2 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="date"],
+form input[type="number"],
+form select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Add styles for the form container */
+.container {
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add border radius for a nicer look */
+    text-align: center; /* Center align the content */
+}
+
+/* Adjust the form styles */
+.container form {
+    display: inline-block; /* Make the form inline-block to center it */
+}
+/* Footer styles */
+.tm-footer {
+    background-color: black;
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center align the content */
+}
+

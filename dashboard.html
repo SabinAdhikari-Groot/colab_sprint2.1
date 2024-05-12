@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="tm-header">
+        <h1 class="logo"><img src="./images/logo.png" alt="Logo" width="100"></h1>
+        <nav class="tm-nav">
+            <ul class="nav-links">
+            <li><a href="nhomepage.html">Home</a></li>
+            <li><a href="mybooking.php">My Bookings</a></li>
+            <li><a href="dashboard.html">Book</a></li>
+            <li><a href="naboutus.html">About Us</a></li>
+            <li><a href="ncontactus.html">Contact us</a></li>
+            <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="container">
+        <section class="welcome-section">
+            <h2>Welcome to Hostel Management System</h2>
+            <p>Manage your bookings, update your profile, and explore settings to customize your experience.</p>
+        </section>
+
+        <section class="booking-beds-section">
+            <h2>Choose your requirements for booking: </h2>
+            <form id="booking-form" action="book.php" method="post">
+                <label for="date">Arrival Date:</label>
+                <input type="date" id="arrival-date" name="arrival-date" required><br>
+                <label for="date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required><br>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+
+                <label for="room">Room Number:</label>
+                <select id="room" name="room-number" required>
+                    <option value="bedNumber">Choose a room number</option>
+                </select><br>
+
+                <label for="num-guests">Number of Guests:</label>
+                <input type="number" id="num-guests" name="num-guests" min="1" max="12" value="1"><br>
+
+
+                <label for="bed-preference">Bed Preference:</label>
+                <select id="bed-preference" name="bed-preference">
+                    <option value="single">Single Bed</option>
+                    <option value="double">Double Bed</option>
+                </select><br>
+
+                <label for="food">Do you want to include food? </label>
+                <select id="food" name="food" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+
+                <input type="submit" value="Book" id="book-bed">
+                <p id="booking-result"></p>
+            </form>
+        </section>
+    </div>
+    <footer class="tm-footer">
+        <p>All rights reserved by group 3</p>
+    </footer>
+    <script src="rooms.js"></script>
+</body>
+</html>

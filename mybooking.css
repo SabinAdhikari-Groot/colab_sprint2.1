@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: skyblue; /* Set background color */
+}
+
+/* Header styles */
+/* Header styles */
+.tm-header {
+    background-color: teal;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px; /* Add border-radius for rounded corners */
+}
+
+
+.logo img {
+    width: 100px;
+}
+
+/* Navigation styles */
+.tm-nav {
+    text-align: center; /* Center align the nav links */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between nav links */
+}
+
+.nav-links li a {
+    color: black; /* Set text color */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 50%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black; /* changed border color to black */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: skyblue;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray; /* changed even row color to lightgray */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+div {
+    text-align: center;
+    margin-top: 20px;
+}
